@@ -2,9 +2,15 @@ $(function() {
 
 ///////// Hamburger Menu Icon /////////
 
-  $(".hamburger").on("click", function(e) {
+  $(".hamburger").click(function(e) {
     $(".hamburger").toggleClass("is-active");
     $('#menu-links').slideToggle();
+  });
+
+  $(".hamburger").one("click", function(e) {
+    $("#dropdown-content1").toggle();
+    $("#dropdown-content2").toggle();
+
   });
 
   $(window).resize(function() {
@@ -32,10 +38,6 @@ $(function() {
   });
 
 ///////// Move Links Down when Clicking - MOBILE ONLY /////////
-
-  /* $(".dropdown").click(function(){
-    $(this).toggleClass("mobile-padding");
-  }); */
 
   $(window).width(function() {
     if ($(window).width() < 650) {
