@@ -106,8 +106,6 @@
 		transform: none;
 	}
 
-		
-
 	/* 
 	#navbar nav a.menu-icon {
 	    display: block;
@@ -149,19 +147,13 @@
 		margin-bottom: 88px;
 	}
 
-	#dropdown-content1 {
-		transition: none;
-		visibility: hidden;
-		z-index: 10000;
-		transform: none;
-	}
-
+	#dropdown-content1, 
 	#dropdown-content2 {
 		transition: none;
-		visibility: hidden;
-		z-index: 10000;
+		visibility: visible;
+		z-index: 100;
 		transform: none;
-	}	
+	}
 
 	.arrow-up {
 	  display: none;
